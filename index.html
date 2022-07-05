@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>JS</title>
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><p style="color:white" class="logo">Ecommerce</p></a>
+            <button type="button" class="btn position-relative" id="cart">
+            <i class="bi bi-cart3" style="font-size: 2rem;color: white;" >
+            <span class="position-absolute start-98 translate-middle badge rounded-pill bg-danger" style="font-size: 0.8rem" id="contador">
+            0</span>
+            </i>
+            </button>
+        </div>
+      </nav>
+
+    <h1 class="text-center" style="margin-top:20px">CARRITO DE COMPRAS</h1>
+
+    <div class="container" id="mostrarProductos">
+        <!--se van a mostrar el listado de productos-->
+
+    </div>
+    
+    <div id="verCarrito">
+        <h2 class="titulo text-center">CARRITO</h2>
+        <hr class="linea">
+            <div id="carrito">
+                <p id="carritoVacio"></p>
+                <!--se van a mostrar los productos que se agregan al carrito-->
+            
+            </div>
+            <div class="container" id="total">
+                <div>
+                    <p class="precioFinal"><b>TOTAL: $<span id="precioTotal">0</span></b></p>
+                </div> 
+                <div>
+                    <button id="vaciar" class="btn btn-primary">Vaciar</button>
+                    <button id="comprar" class="btn btn-danger">Comprar</a></button>
+                </div>              
+            </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
